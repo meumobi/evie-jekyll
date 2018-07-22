@@ -1,0 +1,5 @@
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+future: true
