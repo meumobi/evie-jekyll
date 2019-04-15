@@ -38,6 +38,14 @@ Evie is meant as a theme you customize as needed. It comes with the premade dash
 
 Bug reports and pull requests are welcome on GitHub at [the project page](https://github.com/pizzafox/evie-jekyll). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+## Tips and Tricks
+
+### Use css variable on inline svg
+
+You can use on inline svg the css variable `--primary-color` filled by sass variable `$primary`, useful if you reuse svgs on various projects.
+For example instead of `fill="#6C63FF"` use `fill="var(--primary-color, #6C63FF)"`.
+Only works if you use svg inline (as part of the DOM).
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
