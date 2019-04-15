@@ -35,3 +35,7 @@ html{
 img, svg{
 	max-width: 100%;
 }
+
+svg {
+    --primary-color: #{$primary};
+}
