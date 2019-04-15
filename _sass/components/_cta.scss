@@ -1,6 +1,6 @@
 .cta{
 	background: linear-gradient(to right, $primary, $secondary);
-	color: #fff;
+	color: $cta-text-color;
 	padding: 48pt 0;
 	text-align: center;
 }

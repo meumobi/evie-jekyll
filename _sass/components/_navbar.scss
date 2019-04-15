@@ -16,7 +16,7 @@
 	align-items: center;
 	justify-content: space-between;
 	height: $navbar-height;
-	color: #fff;
+	color: $navbar-text-color;
 	transition: 0.7s;
 }
 
@@ -24,7 +24,7 @@
 .navbar__logo{
 	font-size: 1.325rem;
 	transition: 0;
-	color: #fff;
+	color: $navbar-text-color;
 	text-decoration: none;
 }
 
@@ -50,7 +50,7 @@
 	}
 
 	a{
-		color: #fff;
+		color: $navbar-text-color;
 		@include desktop{
 			opacity: 0.75;
 
@@ -61,7 +61,7 @@
 			&:after {
 				display:block;
 				content: '';
-				border-bottom: solid 1px #fff;  
+				border-bottom: solid 1px $navbar-text-color;
 				transform: scaleX(0);  
 				transition: transform 250ms ease-in-out;
 			}
