@@ -38,6 +38,21 @@ Evie is meant as a theme you customize as needed. It comes with the premade dash
 
 Bug reports and pull requests are welcome on GitHub at [the project page](https://github.com/pizzafox/evie-jekyll). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+### Using a local copy of gem for devs
+* Clone the [original repo](https://github.com/pizzafox/evie-jekyll) on local
+* Create new jekyll site
+  - `$ jekyll new mysite`
+* Update mysite/Gemfile, set path to evie-jekyll's gem
+  - `gem "evie-jekyll", :path => "YOUR_LOCAL_PATH/evie-jekyll"`
+* Update mysite/_config.yml, replace theme to `evie-jekyll`
+  - `theme: evie-jekyll`
+* Copy index.html from gem
+  - `$ cp evie-jekyll/index.html mysite/.`
+  - if exists remove index.md `$ rm mysite/index.md`
+* Bundle and serve mysite project
+  - `$ cd mysite`
+  - `mysite$ bundle exec jekyll serve`
+
 ## Tips and Tricks
 
 ### Use css variable on inline svg
